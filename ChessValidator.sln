@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessValidator.Console", "ChessValidator\ChessValidator.Console.csproj", "{67CB98DE-59DC-4C07-886B-1E5F7AB3B8E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessValidator.Shared", "ChessValidator.Shared\ChessValidator.Shared.csproj", "{7DF09F9F-5F50-45D1-A84F-D25533360F2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67CB98DE-59DC-4C07-886B-1E5F7AB3B8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CB98DE-59DC-4C07-886B-1E5F7AB3B8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CB98DE-59DC-4C07-886B-1E5F7AB3B8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CB98DE-59DC-4C07-886B-1E5F7AB3B8E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF09F9F-5F50-45D1-A84F-D25533360F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF09F9F-5F50-45D1-A84F-D25533360F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF09F9F-5F50-45D1-A84F-D25533360F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF09F9F-5F50-45D1-A84F-D25533360F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF3ECB61-135F-4F6E-81AC-3C4A55F64430}
+	EndGlobalSection
+EndGlobal
