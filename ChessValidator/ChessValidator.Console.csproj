@@ -7,8 +7,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ChessValidator.Shared\ChessValidator.Shared.csproj" />
-  </ItemGroup>
+  <Import Project="..\ChessValidator.Shared\ChessValidator.Shared.projitems" Label="Shared" />
 
 </Project>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>29c306fe-6841-4066-b5ba-eb340051f325</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ChessValidator.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\ChessValidationException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\DuplicatePositionException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\InvalidPieceCountException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\InvalidPositionException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ChessBoard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Position.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pieces\Bishop.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pieces\King.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pieces\Knight.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pieces\Piece.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pieces\Queen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pieces\Rook.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pieces\Shadow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Logic\AttackDetector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Logic\IAttackDetector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Parsing\BoardParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Parsing\IBoardParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Rendering\BoardRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Rendering\IBoardRenderer.cs" />
+  </ItemGroup>
+</Project>
