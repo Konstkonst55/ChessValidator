@@ -1,0 +1,6 @@
+﻿king 0 0
+queen 7 7
+rook 0 7
+bishop 7 0
+knight 1 2
+shadow 3 3

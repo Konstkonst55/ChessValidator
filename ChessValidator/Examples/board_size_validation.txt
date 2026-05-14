@@ -1,0 +1,2 @@
+king 0 0
+queen 8 1

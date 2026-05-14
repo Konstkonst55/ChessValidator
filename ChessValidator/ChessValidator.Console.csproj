@@ -9,4 +9,10 @@
 
   <Import Project="..\ChessValidator.Shared\ChessValidator.Shared.projitems" Label="Shared" />
 
+  <ItemGroup>
+    <None Update="Examples\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
