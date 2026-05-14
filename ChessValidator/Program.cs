@@ -7,15 +7,18 @@ namespace ChessValidator
 {
     internal class Program
     {
-        private const string FolderName = "Examples";
-        private const string FileName = "all_attacks.txt";
+        private const string DefaultFolderName = "Examples";
+        private const string DefaultFileName = "all_attacks.txt";
 
         static void Main(string[] args)
         {
             try
             {
+                string folderName = args.Length > 0 ? args[0] : DefaultFolderName;
+                string fileName = args.Length > 1 ? args[1] : DefaultFileName;
+
                 string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                string inputPath = Path.Combine(baseDirectory, FolderName, FileName);
+                string inputPath = Path.Combine(baseDirectory, folderName, fileName);
 
                 if (!File.Exists(inputPath))
                 {
