@@ -11,10 +11,14 @@ namespace ChessValidator.Shared.Pieces
         public override bool CanAttack(Position target, ChessBoard board)
         {
             if (Position.X == target.X)
+            {
                 return IsPathClear(target, board, 0, target.Y > Position.Y ? 1 : -1);
+            }
 
             if (Position.Y == target.Y)
+            {
                 return IsPathClear(target, board, target.X > Position.X ? 1 : -1, 0);
+            }
 
             return false;
         }

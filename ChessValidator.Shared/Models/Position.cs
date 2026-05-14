@@ -10,8 +10,10 @@ namespace ChessValidator.Shared.Models
         public Position(int x, int y)
         {
             if (x < 0 || x > 7 || y < 0 || y > 7)
+            {
                 throw new InvalidPositionException();
-
+            }
+            
             X = x;
             Y = y;
         }

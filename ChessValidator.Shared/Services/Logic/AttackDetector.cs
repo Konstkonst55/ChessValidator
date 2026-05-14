@@ -13,7 +13,9 @@ namespace ChessValidator.Shared.Services.Logic
                 foreach (var target in board.Pieces)
                 {
                     if (attacker == target)
+                    {
                         continue;
+                    }
 
                     if (attacker.CanAttack(target.Position, board))
                     {
