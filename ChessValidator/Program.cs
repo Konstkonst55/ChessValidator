@@ -8,7 +8,7 @@ namespace ChessValidator
     internal class Program
     {
         private const string FolderName = "Examples";
-        private const string FileName = "too_many_pieces.txt";
+        private const string FileName = "all_attacks.txt";
 
         static void Main(string[] args)
         {
