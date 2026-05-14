@@ -4,8 +4,20 @@ using ChessValidator.Shared.Pieces;
 
 namespace ChessValidator.Shared.Services.Parsing
 {
+    /// <summary>
+    /// Реализация парсера, преобразующего текстовые строки в объект <see cref="ChessBoard"/> с фигурами.
+    /// </summary>
     public class BoardParser : IBoardParser
     {
+        /// <summary>
+        /// Парсит входные строки и создаёт шахматную доску с размещёнными фигурами.
+        /// <para></para>
+        /// Формат строки: [тип] [x] [y].
+        /// </summary>
+        /// <param name="lines">Строки входного файла с описанием фигур.</param>
+        /// <returns>Объект <see cref="ChessBoard"/> с размещёнными фигурами.</returns>
+        /// <exception cref="InvalidPieceCountException">Выбрасывается, если количество фигур меньше 2 или больше 10.</exception>
+        /// <exception cref="ChessValidationException">Выбрасывается при некорректном формате строки, неверных координатах или неизвестном типе фигуры.</exception>
         public ChessBoard Parse(IEnumerable<string> lines)
         {
             var board = new ChessBoard();

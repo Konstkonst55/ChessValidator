@@ -2,8 +2,18 @@
 
 namespace ChessValidator.Shared.Services.Rendering
 {
+    /// <summary>
+    /// Реализация рендерера, создающего текстовую визуализацию шахматной доски 8x8.
+    /// Пустые клетки отображаются точкой (.), занятые — символом фигуры.
+    /// </summary>
     public class BoardRenderer : IBoardRenderer
     {
+        /// <summary>
+        /// Генерирует строковое представление доски, где координата Y увеличивается снизу вверх
+        /// (строка с Y=7 сверху, Y=0 снизу).
+        /// </summary>
+        /// <param name="board">Шахматная доска для отображения.</param>
+        /// <returns>Многострочная строка с визуализацией доски.</returns>
         public string Render(ChessBoard board)
         {
             var grid = new string[8, 8];
@@ -31,7 +41,7 @@ namespace ChessValidator.Shared.Services.Rendering
                 {
                     row += grid[x, y] + " ";
                 }
-                
+
                 lines.Add(row);
             }
 
